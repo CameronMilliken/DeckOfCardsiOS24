@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B42D62D42208B05A00346AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62D32208B05A00346AF7 /* AppDelegate.swift */; };
-		B42D62D62208B05A00346AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62D52208B05A00346AF7 /* ViewController.swift */; };
 		B42D62D92208B05A00346AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D62D72208B05A00346AF7 /* Main.storyboard */; };
 		B42D62DB2208B05B00346AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D62DA2208B05B00346AF7 /* Assets.xcassets */; };
 		B42D62DE2208B05B00346AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D62DC2208B05B00346AF7 /* LaunchScreen.storyboard */; };
+		B42D62E82208B73900346AF7 /* Deck+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62E72208B73900346AF7 /* Deck+Card.swift */; };
+		B42D62EB2208BA8600346AF7 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62EA2208BA8600346AF7 /* CardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B42D62D02208B05A00346AF7 /* DeckOfOneCardiOS24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCardiOS24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42D62D32208B05A00346AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B42D62D52208B05A00346AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B42D62D82208B05A00346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42D62DA2208B05B00346AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42D62DD2208B05B00346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42D62DF2208B05B00346AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42D62E72208B73900346AF7 /* Deck+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deck+Card.swift"; sourceTree = "<group>"; };
+		B42D62EA2208BA8600346AF7 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		B42D62D22208B05A00346AF7 /* DeckOfOneCardiOS24 */ = {
 			isa = PBXGroup;
 			children = (
+				B42D62E92208B74000346AF7 /* Model */,
+				B42D62EC2208BA8C00346AF7 /* Model Controller */,
+				B42D62E62208B55700346AF7 /* Storyboard */,
+				B42D62E52208B54700346AF7 /* Resources */,
+			);
+			path = DeckOfOneCardiOS24;
+			sourceTree = "<group>";
+		};
+		B42D62E52208B54700346AF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B42D62D32208B05A00346AF7 /* AppDelegate.swift */,
-				B42D62D52208B05A00346AF7 /* ViewController.swift */,
-				B42D62D72208B05A00346AF7 /* Main.storyboard */,
 				B42D62DA2208B05B00346AF7 /* Assets.xcassets */,
 				B42D62DC2208B05B00346AF7 /* LaunchScreen.storyboard */,
 				B42D62DF2208B05B00346AF7 /* Info.plist */,
 			);
-			path = DeckOfOneCardiOS24;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B42D62E62208B55700346AF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B42D62D72208B05A00346AF7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B42D62E92208B74000346AF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B42D62E72208B73900346AF7 /* Deck+Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B42D62EC2208BA8C00346AF7 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B42D62EA2208BA8600346AF7 /* CardController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42D62D62208B05A00346AF7 /* ViewController.swift in Sources */,
+				B42D62E82208B73900346AF7 /* Deck+Card.swift in Sources */,
+				B42D62EB2208BA8600346AF7 /* CardController.swift in Sources */,
 				B42D62D42208B05A00346AF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = DeckOfOneCardiOS24/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardiOS24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = DeckOfOneCardiOS24/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardiOS24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
