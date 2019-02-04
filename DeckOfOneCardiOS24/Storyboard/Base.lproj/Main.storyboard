@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="Pue-m7-8a2">
             <objects>
-                <viewController id="U0h-uS-vh0" sceneMemberID="viewController">
+                <viewController id="U0h-uS-vh0" customClass="CardViewController" customModule="DeckOfOneCardiOS24" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o0v-9e-DU7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,9 @@
                                 <rect key="frame" x="16" y="489" width="343" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="drawCardButtonTapped:" destination="U0h-uS-vh0" eventType="touchUpInside" id="t7K-9a-13O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,6 +43,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dox-O3-IiR"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="qzJ-7M-pcF" id="nVA-Dp-x7E"/>
+                        <outlet property="drawCardButton" destination="i2p-g5-1n3" id="7Q1-b7-urR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08z-4S-NIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

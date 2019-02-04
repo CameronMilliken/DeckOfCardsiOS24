@@ -13,6 +13,7 @@
 		B42D62DE2208B05B00346AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D62DC2208B05B00346AF7 /* LaunchScreen.storyboard */; };
 		B42D62E82208B73900346AF7 /* Deck+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62E72208B73900346AF7 /* Deck+Card.swift */; };
 		B42D62EB2208BA8600346AF7 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62EA2208BA8600346AF7 /* CardController.swift */; };
+		B42D62EE2208DE9900346AF7 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D62ED2208DE9900346AF7 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B42D62DF2208B05B00346AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B42D62E72208B73900346AF7 /* Deck+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deck+Card.swift"; sourceTree = "<group>"; };
 		B42D62EA2208BA8600346AF7 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		B42D62ED2208DE9900346AF7 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B42D62E92208B74000346AF7 /* Model */,
 				B42D62EC2208BA8C00346AF7 /* Model Controller */,
+				B42D62EF2208DE9F00346AF7 /* View Controller */,
 				B42D62E62208B55700346AF7 /* Storyboard */,
 				B42D62E52208B54700346AF7 /* Resources */,
 			);
@@ -97,6 +100,14 @@
 				B42D62EA2208BA8600346AF7 /* CardController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		B42D62EF2208DE9F00346AF7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B42D62ED2208DE9900346AF7 /* CardViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42D62EE2208DE9900346AF7 /* CardViewController.swift in Sources */,
 				B42D62E82208B73900346AF7 /* Deck+Card.swift in Sources */,
 				B42D62EB2208BA8600346AF7 /* CardController.swift in Sources */,
 				B42D62D42208B05A00346AF7 /* AppDelegate.swift in Sources */,

@@ -6,7 +6,8 @@
 //  Copyright © 2019 Cameron Milliken. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
 
 class CardController {
     
@@ -53,6 +54,29 @@ class CardController {
         }
         
         dataTask.resume()
+    }
+    
+    static func image(forURL url:String, completion: @escaping (UIImage?) -> Void) {
+        
+        guard let url = URL(string: url) else {return}
+        let imageDataTask = URLSession.shared.dataTask(with: url) { (data, _, error) in
+            if let imageError = error {
+                print("Error retriving image\(imageError.localizedDescription)")
+            }
+            guard let data = data,
+                let image = UIImage(data: data) else {
+                    DispatchQueue.main.async {
+                        completion(nil)
+                        
+                    }
+                    return
+            }
+            DispatchQueue.main.async {
+                completion(image)
+                
+            } //Asyncing takes you back to the main thread.
+        }
+        imageDataTask.resume()
     }
 }
 
